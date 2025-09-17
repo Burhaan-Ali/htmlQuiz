@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz one</title>
+    <script src="tailwindcss.min.js"></script>
+    <style>
+        *{
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="login h-[60vh] flex justify-center items-center">
+        <div class=" p-4 w-[500px] shadow-md space-y-5 border">
+            <div class="text-xl text-[#78f] font-bold">Welcome to Html quiz one</div>
+            <div class="space-y-2">
+                <p class="text-gray-600 loginMessage">Please type you name</p>
+                <input type="text" value="burhan" class="p-2 outline-none border w-[100%] rounded-[5px] username" placeholder="Your name">
+                <button class="bg-[#78f] p-1 w-[100%] text-xl font-bold text-[#fff] rounded-[5px] startBtn">Start</button>
+            </div>
+        </div>
+    </div>
+    <div class="Questions h-[60vh] hidden flex justify-center items-center">
+        <div class=" quiz p-4 w-[500px] shadow-md space-y-5 border">
+            <div class="text-xl text-[#78f] font-bold">Question 1</div>
+            <div class="space-y-2">
+                <p class="text-gray-600 text-xl font-bold">What is html Stands for?</p>
+                <div class="flex items-center space-x-2">
+                    <input type="checkbox" id="answer1" class="p-2 outline-none border  rounded-[5px]">
+                    <label for="answer1">Hyper text Model Language</label>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <input type="checkbox" id="answer2" class="p-2 outline-none border  rounded-[5px]">
+                    <label for="answer2">Hyper text Markup Learning</label>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <input type="checkbox" id="answer3" class="p-2 outline-none border  rounded-[5px]">
+                    <label for="answer3">Hyper term Markup Language</label>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <input type="checkbox" id="answer4" class="p-2 outline-none border  rounded-[5px]">
+                    <label for="answer4">Hyper term Markup Language</label>
+                </div>
+                <button class="bg-[#78f] p-1 w-[100%] text-xl font-bold text-[#fff] rounded-[5px]">Next</button>
+            </div>
+        </div>
+    </div>
+    <div class="result h-[60vh] hidden flex justify-center items-center">
+        <div class=" p-4 py-5 w-[500px] shadow-md space-y-5 border flex items-center flex-col">
+            <div class="text-2xl text-[#78f] font-bold">Quiz has finished.</div>
+            <p class="text-gray-600 text-sm font-bold">Take a look the result.</p>
+            <div class="text-2xl font-bold">98/100</div>
+            <div class="flex space-x-2">
+                <button class="bg-[#78f] p-2 px-4 text-sm font-bold text-[#fff] outline-none rounded-[5px] tryagain">Try again</button>
+                <button class="bg-[#000] p-2 px-8 text-sm font-bold text-[#fff] outline-none rounded-[5px] logout">Logout</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    
+</body>
+</html>
